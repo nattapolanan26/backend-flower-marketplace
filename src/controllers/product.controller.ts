@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import { createProductInput } from "../schema/product.schema";
 import { createProduct, deleteProduct, findAllProducts, findProductByUserId, updateProuduct } from "../services/product.service";
-import { encrypt, decrypt} from '../utils/aesEncryption'
+
 const fs = require('fs');
 
 export const getProductMe = async (
