@@ -70,7 +70,6 @@ if(port == null || port == undefined){
   port = 8080;
 }
 
-
 app.listen(port, () => {
   console.log(`Server started on port: ${port}`);
   // ? call the connectDB function here
