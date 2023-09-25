@@ -5,7 +5,7 @@ import {
     pre,
     prop,
   } from '@typegoose/typegoose';
-  import bcrypt from 'bcryptjs';
+  var bcrypt = require('bcryptjs');
   
   @index({ email: 1 })
   @pre<User>('save', async function () {
