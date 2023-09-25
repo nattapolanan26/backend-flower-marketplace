@@ -67,7 +67,7 @@ app.use((err: any, req: Request, res: Response, next: NextFunction) => {
 let port = config.get<number>('port');
 
 if(port == null || port == undefined){
-  port = 8080;
+  port = 8000;
 }
 
 app.listen(port, () => {
